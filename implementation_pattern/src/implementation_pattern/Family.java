@@ -8,6 +8,6 @@ public class Family implements Cars_interface {
     @Override
     public void delivery(int stock) {
        this.stock=stock;	
-       System.out.println("carro familiar fecha y hora del arquiler "+fecha+"Stock: "+ this.stock);
+       System.out.println("Carro familiar fecha y hora del arquiler "+fecha+"Stock: "+ this.stock);
     }
  }
