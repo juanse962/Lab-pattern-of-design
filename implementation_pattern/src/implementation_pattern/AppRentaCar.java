@@ -38,6 +38,15 @@ public class AppRentaCar {
 		cliente.id = id;
 		cliente.nombre = nombre;
 		cliente.genero = genero;
+		
+		Queue<String> customerid = new LinkedList();
+		Queue<String> customername = new LinkedList();
+		Queue<String> customergenero = new LinkedList();
+		
+		customerid.offer(cliente.id);
+		customername.offer(cliente.nombre);
+		customergenero.offer(cliente.genero);
+		
 	}
 	public void  getInstance(String placa,String cilindraje,String marca,String color,String transmicion,int numpuestos,String VIP){
 		Abstract_car fcar = Customer.getFactory(VIP);
